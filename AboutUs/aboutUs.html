@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "DynaPuff", cursive;
+      background-color: rgb(236, 203, 229); /* Light pink background */
+      color: #4b2e2e; /* Chocolate brown for contrast */
+    }
+
+    a.back-link {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      background-color: #ffb6c1;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      z-index: 10;
+      transition: background-color 0.3s;
+    }
+
+    a.back-link:hover {
+      background-color: #ff69b4;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      text-align: center;
+      /* background-color: rgba(255, 255, 255, 0.486); */
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      margin: 1rem 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .section p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 1rem;
+      line-height: 1.6;
+      background-color: rgba(255, 255, 255, 0.486);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Alternate layout on larger screens */
+    @media (min-width: 768px) {
+      .section {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+      }
+
+      .section:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .section img, .section p {
+        flex: 1;
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="/" class="back-link">← Home</a>
+
+  <div class="section">
+    <img src="/images/items/1.webp" alt="Freshly Baked Goods">
+    <p>Sugar Shack is a family business that seeks to bring the you quaility and delicious home-made baked goods!</p>
+  </div>
+
+  <div class="section">
+    <img src="/images/items/5.webp" alt="Cozy Bakery Interior">
+    <p>We are currently a mobile buisiness. We usually sell on the street and at events. We hope to establish a permanant location in the future!</p>
+  </div>
+
+  <div class="section">
+    <img src="/images/items/13.webp" alt="Ingredients and Crafting">
+    <p>Our specialty is bread - Banana Bread! Our bread is baked using a homemade recipe that has been a hit among our own families. We seek to bring these experiences to Albuquerque. </p>
+  </div>
+
+  <div class="section">
+    <img src="/images/items/14.webp" alt="Events and Catering">
+    <p>In addition to our breads, we often sell many other snacks and treats. Our selection changes every week, so be sure to stop by to see what we have to offer!</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+#foot{
+
+    height: 100px;
+    background-color: #99004d;
+    margin-top: 20px;
+    border-top: 2px solid black;
+    justify-content: center;
+    padding: 20px;
+
+}
+#footContainer{
+
+    display: flex;
+    justify-content: center;
+    border: 3px solide white;
+
+}
+.footBox{
+    
+    /* border: 3px solid white; */
+    color: white;
+    text-justify: auto;
+
+}
+.footerLink::visited{
+
+    color: white;
+
+}

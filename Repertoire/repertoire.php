@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Repertoire</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="repertoire.css">
+    <meta http-equiv="expires" content="0">
+    <script src="repertoire.js"></script>
+
+  </head>
+
+  <body id="body">
+    <h1 id="title">Our Repertoire</h1>
+
+    <a href="/" class="back-link">← Home</a>
+
+    <div id="container">
+
+      <div class="card" id='1'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/1.webp' class='cardImg' id='image_1'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Plain Banana Bread</h1>
+
+                            <p class='desc'>Our Classic Banana Bread</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='3'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/3.webp' class='cardImg' id='image_3'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Gold Bar Single</h1>
+
+                            <p class='desc'>Nostalgic gold bars; An APS school classic peanut butter crunch bar w/ a chocolate topping</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='4'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/4.webp' class='cardImg' id='image_4'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Dubai Chocolate Bar (8oz)</h1>
+
+                            <p class='desc'>Milk or Dark Chocolate bar filled w/ kataifi & pistachio cream</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='5'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/5.webp' class='cardImg' id='image_5'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Blueberry Banana Bread</h1>
+
+                            <p class='desc'>Sugar Shack's banana bread incorporated w/ blueberries.</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='12'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/12.webp' class='cardImg' id='image_12'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Rum Cake</h1>
+
+                            <p class='desc'>[LATER]</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='13'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/13.webp' class='cardImg' id='image_13'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Stuffed Dubai Chocolate Chip Cookie</h1>
+
+                            <p class='desc'>Our delicious chocolate chip cookie base stuffed with the famous pistachio Dubai filling</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='14'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/14.webp' class='cardImg' id='image_14'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Banana Bread Assorted Muffin Sampler Pack</h1>
+
+                            <p class='desc'>This pack includes plain, blueberry, pineapple, Belgian walnut chocolate chip, & walnut banana bread muffins</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='15'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/15.webp' class='cardImg' id='image_15'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>S’mores Cookie</h1>
+
+                            <p class='desc'>A chocolate chip cookie stuffed w/ a crispy buttery graham cracker & marshmallow</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='18'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/18.webp' class='cardImg' id='image_18'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Cherry Almond Banana Bread (large)</h1>
+
+                            <p class='desc'>Our classic banana bread incorporated w/ dark cherries, almonds, & topped with an almond glaze</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='19'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/19.webp' class='cardImg' id='image_19'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Double Chocolate Chip Banana Bread (small)</h1>
+
+                            <p class='desc'>A</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='21'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/21.webp' class='cardImg' id='image_21'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Piñon Banana Bread</h1>
+
+                            <p class='desc'>Our classic banana bread incorporated, & topped w/ piñons </p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='22'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/22.webp' class='cardImg' id='image_22'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Lemon-Strawberry Pound Cake</h1>
+
+                            <p class='desc'>A delicious lemon pound cake filled w/ a strawberry jam sauce & topped with a lemon glaze</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='23'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/23.webp' class='cardImg' id='image_23'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Almond-Cherry Pound Cake</h1>
+
+                            <p class='desc'>An almond-vanilla pound cake filled w/ a cherry jam sauce filling, topped with almonds</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+      
+
+      
+      
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal" id="alertModal">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <h2>We'll email you when we are selling this item</h2>
+        <input type="email" id="emailInput" placeholder="your@email.com" />
+        <div class="error" id="emailError"></div>
+        <button id="submitEmail">Submit</button>
+        <div class="subscribe-message" id="subscribeMessage"></div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay2">
+      <div class="modal" id="alertModal2">
+        <p id="ingredientsText"></p>
+        <button class="modal-close" id="modalClose2">&times;</button>
+      </div>
+    </div>
+
+    
+  </body>
+
+
+
+</html>

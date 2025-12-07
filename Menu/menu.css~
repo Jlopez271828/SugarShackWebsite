@@ -1,0 +1,46 @@
+#body{
+    background-color: pink;
+    margin: 0;
+
+}
+
+#title{
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+#container{
+
+    display:flex;
+    /*float: left;*/
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 0px;
+    /*border: 3px solid;*/
+    flex-wrap: wrap;
+    width: calc(100% - 2 * 20px);
+
+}
+.card{
+
+    background-color: white;
+    height: 500px;
+    width: 750px;
+    margin: 20px;
+    /*border: 2px solid black;*/
+
+}
+.innerCard{
+
+    background-color: white;
+    height: 480px;
+    width: 720px;
+    border: 1px solid black;
+    position: relative;
+    left: 14px;
+    top: 9px;
+    
+    
+    
+}

@@ -1,0 +1,17 @@
+#foot{
+
+    height: 100px;
+    background-color: #99004d;
+    margin-top: 20px;
+    border-top: 2px solid black;
+
+}
+#footContainer{
+
+    display: inline-block;
+
+}
+.footBox{
+
+
+}

@@ -1,0 +1,33 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    background-color: lightpink;
+
+}
+form{
+
+    padding: 100px;
+
+}
+label{
+
+    font-size: 2rem;
+    margin: 30px;
+    
+
+
+}
+input{
+
+    font-size: 2rem;
+    margin: 30px;
+
+}
+button{
+
+    justify-self: center;
+    font-size: 2rem;
+    margin: 30px;
+
+}

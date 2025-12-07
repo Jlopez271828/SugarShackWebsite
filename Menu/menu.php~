@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Today's Menu</title>
+    <link rel="stylesheet" href="menu.css">
+
+  </head>
+
+  <body id="body">
+    <h1 id="title">Today's menu</h1>
+
+    <div id="container">
+
+      <?php include("../PHP/getCards.php")?>
+      
+
+      
+      
+    </div>
+
+    <?php include("../PHP/footer.php"); ?>
+    
+  </body>
+
+
+
+</html>

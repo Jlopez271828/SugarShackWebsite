@@ -1,0 +1,38 @@
+body{
+
+    background-color: hotpink;
+}
+#container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#mainLink{
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2rem;
+    padding: 10px;
+
+
+}
+
+
+#container > a{
+
+    background-color: pink;
+    width: 300px;
+    height: 200px;
+    border: solid 5px black;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    margin: 30px;
+
+}

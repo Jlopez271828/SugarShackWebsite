@@ -1,0 +1,66 @@
+body{
+
+    background-color: hotpink;
+    margin-top: 50px;
+
+}
+#main{
+
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+
+
+}
+#mainForm{
+
+    background-color: lightpink;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: clamp( 500px, 80%, 1000px);
+
+
+}
+
+label{
+
+    margin: 5px;
+
+}
+
+input{
+
+    border: 2px dashed black;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+textarea{
+
+    border: 2px dashed black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+#request{
+
+    resize: none;
+
+}
+
+button{
+
+    background-color: lightpink;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+
+}

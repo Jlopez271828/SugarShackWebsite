@@ -1,0 +1,123 @@
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+error_log /var/log/nginx/error.log;
+
+http{
+
+
+	##basic setting
+
+	sendfile on;
+	tcp_nopush on;
+	#types_hash_max_size 2048;
+
+	
+	include /home/ubuntu/website2/config/mime.types;
+	default_type application/octet-stream;
+
+	
+	##SSL settings
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+	ssl_prefer_server_ciphers on;
+
+	##logging settings
+
+	access_log /var/log/nginx/access.log;
+
+	## GZIP
+
+	gzip on;
+	#gzip_types text/plain text/css;
+
+
+	server{
+
+		listen 80 default_server;
+		listen [::]:80 ipv6only=on default_server;
+		root /home/ubuntu/website2;
+
+		server_name 192.153.196.181;
+
+		#error_page 404 /index.html;
+		index index.php;
+
+		location ~* \.(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|otf|eot|mp4|webm|ogg|mp3|wav|zip|tar|gz|bz2|rar)$ {
+    			  root /home/ubuntu/website2;
+			  expires max;
+			  add_header Cache-Control "public, max-age=31536000";
+    	       	}
+
+		location /favicon.ico {
+			  root /home/ubuntu/website2;
+			 # return 204;
+			  access_log off;
+			  log_not_found off;
+		}
+
+		location /AboutUs {
+
+			 #include /etc/nginx/mime.types;
+			 root /home/ubuntu/website2;
+			 try_files /AboutUs/aboutUs.html =404;
+			 
+		}
+
+		location /Orders {
+			 root /home/ubuntu/website2;
+			 try_files /Orders/orders.html =404;
+		}
+
+		location /Menu {
+			 root /home/ubuntu/website2;
+			 index menu.php;
+		
+		}
+
+		location /Repertoire {
+			 root /home/ubuntu/website2;
+			 try_files /Repertoire/repertoire.html =404;
+		}
+
+		location /images {
+			 root /home/ubuntu/website2;
+			 
+
+		}
+
+		location /Calendar {
+
+			 root /home/ubuntu/website2;
+			 try_files /Calendar/calendar.html =404;
+
+		}
+
+		location /Control {
+
+			 root /home/ubuntu/website2;
+			 try_files /Control/control.html =404;
+
+		}
+
+		location ~ \.php$ {
+
+                         #include /home/ubuntu/website2/config/mime.types;
+                         include ../snippets/fastcgi-php.conf;
+
+                         fastcgi_pass unix:/run/php/php8.1-fpm.sock;                                                                              
+
+
+                }
+
+	
+	
+
+	}
+
+}
+
+events{
+
+	worker_connections 768;
+	
+}
