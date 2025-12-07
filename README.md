@@ -1,5 +1,14 @@
 This is a project made primarily for sugar shack, my grandmother's business.
 
+Team contributions:
+  Jacob: 100%
+
+Libraries & tools used:
+  php-mysqli
+  php-parsedown
+  php-phpmailer
+
+  mjml was used externally for our email template.
 
 To run this project:
 

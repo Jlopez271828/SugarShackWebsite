@@ -20,7 +20,7 @@
 
     <div id="container">
 
-      <div class="card" id='1'>
+      <div class="category_banner">Banana Bread</div><div class="card" id='1'>
 
                         <div class="innerCard">
 
@@ -32,50 +32,6 @@
                             <h1 class='name'>Plain Banana Bread</h1>
 
                             <p class='desc'>Our Classic Banana Bread</p>
-                            </div>
-
-                            <div class='buttonContainer'>
-                            <button class='notifyBtn'>Notify me when this item is being sold</button>
-                            <button class='ingredientsBtn'>Ingredients</button>
-                            </div>
-
-
-
-                        </div>
-                    </div><div class="card" id='3'>
-
-                        <div class="innerCard">
-
-                            <div class='imageContainer'>
-                                <img src='/images/items/3.webp' class='cardImg' id='image_3'>
-                            </div>
-
-                            <div class = 'titleDesc'>
-                            <h1 class='name'>Gold Bar Single</h1>
-
-                            <p class='desc'>Nostalgic gold bars; An APS school classic peanut butter crunch bar w/ a chocolate topping</p>
-                            </div>
-
-                            <div class='buttonContainer'>
-                            <button class='notifyBtn'>Notify me when this item is being sold</button>
-                            <button class='ingredientsBtn'>Ingredients</button>
-                            </div>
-
-
-
-                        </div>
-                    </div><div class="card" id='4'>
-
-                        <div class="innerCard">
-
-                            <div class='imageContainer'>
-                                <img src='/images/items/4.webp' class='cardImg' id='image_4'>
-                            </div>
-
-                            <div class = 'titleDesc'>
-                            <h1 class='name'>Dubai Chocolate Bar (8oz)</h1>
-
-                            <p class='desc'>Milk or Dark Chocolate bar filled w/ kataifi & pistachio cream</p>
                             </div>
 
                             <div class='buttonContainer'>
@@ -108,50 +64,6 @@
 
 
                         </div>
-                    </div><div class="card" id='12'>
-
-                        <div class="innerCard">
-
-                            <div class='imageContainer'>
-                                <img src='/images/items/12.webp' class='cardImg' id='image_12'>
-                            </div>
-
-                            <div class = 'titleDesc'>
-                            <h1 class='name'>Rum Cake</h1>
-
-                            <p class='desc'>[LATER]</p>
-                            </div>
-
-                            <div class='buttonContainer'>
-                            <button class='notifyBtn'>Notify me when this item is being sold</button>
-                            <button class='ingredientsBtn'>Ingredients</button>
-                            </div>
-
-
-
-                        </div>
-                    </div><div class="card" id='13'>
-
-                        <div class="innerCard">
-
-                            <div class='imageContainer'>
-                                <img src='/images/items/13.webp' class='cardImg' id='image_13'>
-                            </div>
-
-                            <div class = 'titleDesc'>
-                            <h1 class='name'>Stuffed Dubai Chocolate Chip Cookie</h1>
-
-                            <p class='desc'>Our delicious chocolate chip cookie base stuffed with the famous pistachio Dubai filling</p>
-                            </div>
-
-                            <div class='buttonContainer'>
-                            <button class='notifyBtn'>Notify me when this item is being sold</button>
-                            <button class='ingredientsBtn'>Ingredients</button>
-                            </div>
-
-
-
-                        </div>
                     </div><div class="card" id='14'>
 
                         <div class="innerCard">
@@ -164,28 +76,6 @@
                             <h1 class='name'>Banana Bread Assorted Muffin Sampler Pack</h1>
 
                             <p class='desc'>This pack includes plain, blueberry, pineapple, Belgian walnut chocolate chip, & walnut banana bread muffins</p>
-                            </div>
-
-                            <div class='buttonContainer'>
-                            <button class='notifyBtn'>Notify me when this item is being sold</button>
-                            <button class='ingredientsBtn'>Ingredients</button>
-                            </div>
-
-
-
-                        </div>
-                    </div><div class="card" id='15'>
-
-                        <div class="innerCard">
-
-                            <div class='imageContainer'>
-                                <img src='/images/items/15.webp' class='cardImg' id='image_15'>
-                            </div>
-
-                            <div class = 'titleDesc'>
-                            <h1 class='name'>S’mores Cookie</h1>
-
-                            <p class='desc'>A chocolate chip cookie stuffed w/ a crispy buttery graham cracker & marshmallow</p>
                             </div>
 
                             <div class='buttonContainer'>
@@ -262,6 +152,72 @@
 
 
                         </div>
+                    </div><div class="category_banner">Bread</div><div class="category_banner">Cake Pops</div><div class="category_banner">Chocolates</div><div class="card" id='3'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/3.webp' class='cardImg' id='image_3'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Gold Bar Single</h1>
+
+                            <p class='desc'>Nostalgic gold bars; An APS school classic peanut butter crunch bar w/ a chocolate topping</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='4'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/4.webp' class='cardImg' id='image_4'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Dubai Chocolate Bar (8oz)</h1>
+
+                            <p class='desc'>Milk or Dark Chocolate bar filled w/ kataifi & pistachio cream</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="category_banner">Cakes</div><div class="card" id='12'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/12.webp' class='cardImg' id='image_12'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Rum Cake</h1>
+
+                            <p class='desc'>[LATER]</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
                     </div><div class="card" id='22'>
 
                         <div class="innerCard">
@@ -306,7 +262,73 @@
 
 
                         </div>
-                    </div>
+                    </div><div class="category_banner">misc</div><div class="card" id='46'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/46.webp' class='cardImg' id='image_46'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>A</h1>
+
+                            <p class='desc'>A</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="category_banner">Cookies</div><div class="card" id='13'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/13.webp' class='cardImg' id='image_13'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>Stuffed Dubai Chocolate Chip Cookie</h1>
+
+                            <p class='desc'>Our delicious chocolate chip cookie base stuffed with the famous pistachio Dubai filling</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="card" id='15'>
+
+                        <div class="innerCard">
+
+                            <div class='imageContainer'>
+                                <img src='/images/items/15.webp' class='cardImg' id='image_15'>
+                            </div>
+
+                            <div class = 'titleDesc'>
+                            <h1 class='name'>S’mores Cookie</h1>
+
+                            <p class='desc'>A chocolate chip cookie stuffed w/ a crispy buttery graham cracker & marshmallow</p>
+                            </div>
+
+                            <div class='buttonContainer'>
+                            <button class='notifyBtn'>Notify me when this item is being sold</button>
+                            <button class='ingredientsBtn'>Ingredients</button>
+                            </div>
+
+
+
+                        </div>
+                    </div><div class="category_banner">Brownies</div>
       
 
       

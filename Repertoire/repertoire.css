@@ -41,6 +41,24 @@
   justify-items: center;
 }
 
+.category_banner{
+
+  /*width: max(700px , 70vw);*/
+  width: 80%;
+  grid-column: 1 / -1;
+  background-color: white;
+  margin: 20px;
+  border-radius: 15px;
+  text-align: center;
+  self-align: center;
+  justify-self: center;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: 'Dynapuff', cursive;
+
+}
+
 .card{
 
     /* width: 350px; */
