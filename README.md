@@ -30,3 +30,4 @@ Things to know:
 1. the login page is at '/login'. 
 2. in the edit items page, fields can be clicked to edit them. Clicking on the circle in the bottom right adds a new item.
 3. There is a running version of this project that can be found at https://copingseethingmalding.com
+4. Images for items will be put in the images directory, with each image having a name of <item_id>.webp
