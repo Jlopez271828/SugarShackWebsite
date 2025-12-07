@@ -6,9 +6,9 @@ To run this project:
 1. Clone the repository
 2. If needed, point nginx to your fastcgi install in nginx.conf
 3. There are a few config files that you will have to create yourself witin the config directory
-  1. login.ini, this contains a 'username' and 'password' field for the admin account.
-  2. emailParams.ini, this contains a 'host', 'username', and 'password' field for the user's choice of stmp server. (this project may work without this, but I am unsure).
-  3. dbParams.ini, this contains 'host', 'username', 'password', and 'dbName' fields to connect to a running Mysql database.
+  - login.ini, this contains a 'username' and 'password' field for the admin account.
+  - emailParams.ini, this contains a 'host', 'username', and 'password' field for the user's choice of stmp server. (this project may work without this, but I am unsure).
+  - dbParams.ini, this contains 'host', 'username', 'password', and 'dbName' fields to connect to a running Mysql database.
 
 4. This project uses a mysql database. There is a schema.sql included in this repo for easy importing.
 5. The standard web traffic ports need to be opened (80 and 443).
