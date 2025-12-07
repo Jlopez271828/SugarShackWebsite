@@ -4,7 +4,7 @@
 
         $template = file_get_contents("../SPHP/repertoireTemplate.html");
 
-        $db_params = parse_ini_file("/home/jacob/website1/config/dbParams.ini");
+        $db_params = parse_ini_file("../config/dbParams.ini");
 
 
         $conn = new mysqli($db_params['host'], $db_params['username'], $db_params['password'], $db_params['dbName']);
@@ -54,11 +54,11 @@
             }
         }
 
-        $output = fopen("output.txt", 'w');
+        //$output = fopen("output.txt", 'w');
 
-        fwrite($output, "TEMPLATE: $template\n\n");
-        fwrite($output, "CARDS: $cards\n\n");
-        fclose($output);
+        //fwrite($output, "TEMPLATE: $template\n\n");
+        //fwrite($output, "CARDS: $cards\n\n");
+        //fclose($output);
 
         $page = str_replace("ENTERCARDS", $cards, $template);
 

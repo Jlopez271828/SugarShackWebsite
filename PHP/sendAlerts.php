@@ -9,9 +9,9 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
   
 }
 
-require '/home/jacob/website1/SPHP/generateEmail.php';
+require '../SPHP/generateEmail.php';
 
-require '/home/jacob/website1/vendor/autoload.php';
+require '../vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

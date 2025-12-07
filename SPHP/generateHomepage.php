@@ -1,6 +1,6 @@
 <?php
 
-    require '/home/jacob/website1/vendor/autoload.php';
+    require '../vendor/autoload.php';
 
     function genHomepage(){
 

@@ -1,6 +1,6 @@
 <?php
 
-$db_params = parse_ini_file("/home/jacob/website1/config/dbParams.ini");
+$db_params = parse_ini_file("../config/dbParams.ini");
 
 
 $conn = new mysqli($db_params['host'], $db_params['username'], $db_params['password'], $db_params['dbName']);
@@ -8,7 +8,7 @@ $conn = new mysqli($db_params['host'], $db_params['username'], $db_params['passw
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '/home/jacob/website1/vendor/autoload.php'; // Ensure the path is correct
+require '../vendor/autoload.php';
 
 if($conn->connect_error){
 
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         echo("Added to database\n");
 
-        $email_params = parse_ini_file("/home/jacob/website1/config/emailParams.ini");
+        $email_params = parse_ini_file("../config/emailParams.ini");
         $mail = new PHPMailer(true);
 
         try{

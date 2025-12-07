@@ -17,6 +17,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Current Database: `ssdata`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `ssdata` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+
+USE `ssdata`;
+
+--
 -- Table structure for table `alerts`
 --
 
@@ -31,20 +39,22 @@ CREATE TABLE `alerts` (
   UNIQUE KEY `unique_alert` (`item_id`,`email_id`),
   KEY `item_id` (`item_id`),
   KEY `email_id` (`email_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `alerts`
+-- Table structure for table `categories`
 --
 
-LOCK TABLES `alerts` WRITE;
-/*!40000 ALTER TABLE `alerts` DISABLE KEYS */;
-INSERT INTO `alerts` VALUES
-(4,1,11),
-(5,2,13);
-/*!40000 ALTER TABLE `alerts` ENABLE KEYS */;
-UNLOCK TABLES;
+DROP TABLE IF EXISTS `categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `categories` (
+  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`category_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Table structure for table `currently_selling`
@@ -57,18 +67,10 @@ CREATE TABLE `currently_selling` (
   `currently_selling_id` int(11) NOT NULL AUTO_INCREMENT,
   `item_id` int(11) DEFAULT NULL,
   `quantity` int(11) DEFAULT NULL,
-  PRIMARY KEY (`currently_selling_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  PRIMARY KEY (`currently_selling_id`),
+  UNIQUE KEY `unique_item_id` (`item_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `currently_selling`
---
-
-LOCK TABLES `currently_selling` WRITE;
-/*!40000 ALTER TABLE `currently_selling` DISABLE KEYS */;
-/*!40000 ALTER TABLE `currently_selling` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `email_list`
@@ -87,20 +89,6 @@ CREATE TABLE `email_list` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `email_list`
---
-
-LOCK TABLES `email_list` WRITE;
-/*!40000 ALTER TABLE `email_list` DISABLE KEYS */;
-INSERT INTO `email_list` VALUES
-(7,11),
-(5,13),
-(11,15),
-(10,19);
-/*!40000 ALTER TABLE `email_list` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `emails`
 --
 
@@ -113,23 +101,8 @@ CREATE TABLE `emails` (
   PRIMARY KEY (`email_id`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `email_2` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `emails`
---
-
-LOCK TABLES `emails` WRITE;
-/*!40000 ALTER TABLE `emails` DISABLE KEYS */;
-INSERT INTO `emails` VALUES
-(15,'dmontano6@gmail.com'),
-(13,'jlopez271828@gmail.com'),
-(18,'jmontano123@gmail.com'),
-(19,'jmontano123@yahoo.com'),
-(11,'lpzboys@gmail.com');
-/*!40000 ALTER TABLE `emails` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `events`
@@ -145,15 +118,6 @@ CREATE TABLE `events` (
   PRIMARY KEY (`event_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `events`
---
-
-LOCK TABLES `events` WRITE;
-/*!40000 ALTER TABLE `events` DISABLE KEYS */;
-/*!40000 ALTER TABLE `events` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `items`
@@ -172,39 +136,8 @@ CREATE TABLE `items` (
   `ingredients` text DEFAULT NULL,
   PRIMARY KEY (`item_id`),
   UNIQUE KEY `seq_no` (`seq_no`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `items`
---
-
-LOCK TABLES `items` WRITE;
-/*!40000 ALTER TABLE `items` DISABLE KEYS */;
-INSERT INTO `items` VALUES
-(1,'Classic Banana Bread','Sugar Shack\'s Classic Banana Bread',12.00,1,1,'ingredient 1, ingredient 2, ingredient 3'),
-(2,'Walnut Banana Bread','Sugar Shack\'s classic Banana bread with Walnuts.',17.00,0,2,NULL),
-(3,'Gold Bars','Nostalgic Gold Bars; An Albuquerque Classic',12.00,1,3,'Ingredient 1, ingredient 2'),
-(4,'Dubai Bars','Chocolate Bars with a Pistachio and Knafe filling',12.00,1,4,NULL),
-(5,'Blueberry Walnut Bread','Sugar Shack\'s banana bread with walnuts and blueberries.',12.00,1,5,NULL),
-(6,'Hawaiian Bread','Sugar Shack\'s banana bread with bits of pineapple.',12.00,0,6,NULL),
-(7,'Red Velvet Banan Bread','Sugar Shack\'s banan bread with a velvet twist.',12.00,0,7,NULL),
-(8,'Gluten Free Banana Bread','Sugar Shack\'s banan bread free of Gluten.',12.00,0,8,NULL),
-(9,'Gluten Free Brownies','Classic Brownies, gluten free.',12.00,0,9,NULL),
-(10,'Gluten Free Chocolate Chip Cookies','Chocolate chip cookies, no gluten.',12.00,0,10,NULL),
-(11,'Apple Cinnamon Roll Cake','[LATER]',12.00,0,11,NULL),
-(12,'Pineapple Upside Down Rum Cake','[LATER]',12.00,1,12,NULL),
-(13,'Dubai Cookies','Dubai Cookies',1.00,1,NULL,NULL),
-(14,'Blueberry Muffins','Blueberry Muffins',1.00,1,NULL,NULL),
-(15,'Smores Cookie','Smores Cookie',1.00,1,NULL,NULL),
-(16,'Pina-Colada Rum Cake','A',1.00,1,NULL,'ingredient 1, ingredient2'),
-(17,'Dubai Hearts','A',1.00,0,NULL,NULL),
-(18,'Cherry Walnut Banana Bread','A',1.00,1,NULL,NULL),
-(19,'Double Chocolate Chip Banana Bread','A',1.00,1,NULL,NULL),
-(20,'Coconut Lime Tea Cake','A',1.00,1,NULL,NULL),
-(21,'A','A',1.00,0,NULL,NULL);
-/*!40000 ALTER TABLE `items` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `requests`
@@ -224,21 +157,6 @@ CREATE TABLE `requests` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `requests`
---
-
-LOCK TABLES `requests` WRITE;
-/*!40000 ALTER TABLE `requests` DISABLE KEYS */;
-INSERT INTO `requests` VALUES
-(1,'lpzboys@gmail.com',0,'WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW','jacob lopez'),
-(2,'lpzboys@gmail.com',0,'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF','jacob lopez'),
-(3,'lpzboys@gmail.com',0,'GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG','jacob lopez'),
-(4,'lpzboys@gmail.com',0,'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH','jacob lopez'),
-(5,NULL,0,NULL,'');
-/*!40000 ALTER TABLE `requests` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `votes`
 --
 
@@ -254,15 +172,6 @@ CREATE TABLE `votes` (
   KEY `item_id` (`item_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `votes`
---
-
-LOCK TABLES `votes` WRITE;
-/*!40000 ALTER TABLE `votes` DISABLE KEYS */;
-/*!40000 ALTER TABLE `votes` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -273,4 +182,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-08-12 15:51:05
+-- Dump completed on 2025-12-07  3:16:22

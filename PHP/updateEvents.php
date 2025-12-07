@@ -7,8 +7,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
     die();
 }
 
-require '/home/jacob/website1/vendor/autoload.php';
-require '/home/jacob/website1/SPHP/generateHomepage.php';
+require '../vendor/autoload.php';
+require '../SPHP/generateHomepage.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $inputJSON = file_get_contents("php://input");

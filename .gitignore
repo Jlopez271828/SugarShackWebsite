@@ -1,0 +1,12 @@
+*.zip
+
+dbParams.ini
+emailParams.ini
+login.ini
+
+
+homer.css
+
+old/
+
+

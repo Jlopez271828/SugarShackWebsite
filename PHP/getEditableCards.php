@@ -6,7 +6,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
     die();
 }
 
-$db_params = parse_ini_file("/home/jacob/website1/config/dbParams.ini");
+$db_params = parse_ini_file("../config/dbParams.ini");
 
 
 $conn = new mysqli($db_params['host'], $db_params['username'], $db_params['password'], $db_params['dbName']);

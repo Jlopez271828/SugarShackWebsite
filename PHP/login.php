@@ -2,7 +2,7 @@
 // Start session to store login information
 session_start();
 
-$loginParams = parse_ini_file("/home/jacob/website1/config/login.ini");
+$loginParams = parse_ini_file("../config/login.ini");
 
 // Define a hardcoded username and hashed password (or fetch from a database)
 $valid_username = $loginParams['username'];

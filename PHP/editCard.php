@@ -7,7 +7,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] != true){
 
 }
 
-require '/home/jacob/website1/SPHP/generateRepertoire.php';
+require '../SPHP/generateRepertoire.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $inputJSON = file_get_contents("php://input");
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $price = $data['price'];
 	      $selling = $data['selling'];
 
-        $db_params = parse_ini_file("/home/jacob/website1/config/dbParams.ini");
+        $db_params = parse_ini_file("../config/dbParams.ini");
 
 
         $conn = new mysqli($db_params['host'], $db_params['username'], $db_params['password'], $db_params['dbName']);

@@ -205,9 +205,7 @@
     <section>
       <h2>Upcoming Events</h2>
       <div class="events">
-        <p>SCHEDULE FOR SEPTEMBER:</p>
-<p>SATURDAY, 9/13 - Furniture 42: 9AM-5PM | 1504 Cherry Rd NE, Rio Rancho, NM 87144</p>
-<p>SATURDAY, 9/20 - Furniture 42: 9AM-5PM | 1504 Cherry Rd NE, Rio Rancho, NM 87144</p>
+        <p>Schedule TBD</p>
       </div>
     </section>
 
